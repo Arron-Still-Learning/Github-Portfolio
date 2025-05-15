@@ -88,7 +88,7 @@ header .container {
   justify-content: space-between;
   align-items: center;
   height: 80px;
-  padding: 0px 150px;
+  padding: 0px 50px;
   background-color: #0A192F;
 }
 
@@ -165,8 +165,8 @@ header nav ul li:last-child {
 }
 
 .resume-btn a:hover {
-  box-shadow: 0 0 2px 1px rgba(127, 0, 255, 0.4), 
-              0 0 4px 1px rgba(100, 255, 218, 0.3); /* gradient-ish glow */
+  box-shadow: 0 0 4px 1px rgba(127, 0, 255, 0.4), 
+              0 0 6px 1px rgba(100, 255, 218, 0.3); /* gradient-ish glow */
   color: #ffffff;
 }
 
@@ -178,12 +178,57 @@ header nav ul li:last-child {
 .banner .container {
   padding-top: 80px;
   background-color: #0A192F;
+  display: flex;
+  justify-content: space-between;
+ 
+}
+
+.banner .container .left-banner {
+ padding-left: 150px;
+ padding-top: 80px;
+}
+
+.banner .container .left-banner p:first-child{
+  font-size: 14px;
+  font-weight: 400;
+  font-family: 'Fira Code', monospace;
+  margin-left: 3px;
+  margin-bottom: 10px;
+}
+
+.banner .container .left-banner h2 {
+  font-size: 40px;
+  font-weight: 700;
+  font-family: 'Inter', sans-serif;   
+  margin-bottom: 10px;
+}
+
+.banner .container .left-banner .designation {
+  font-size: 40px;
+  font-weight: 700;
+  font-family: 'Inter', sans-serif;  
+  color: #CCD6F6;
+}
+
+.banner .container .left-banner .designation:first-child {
+  margin-bottom: 5px;
+}
+
+.banner .container .left-banner p small   {
+  font-size: 20px;
+  font-weight: 700;
+  font-family: "Fira Code", monospace;
+}
+
+.banner .container .right-banner {
+padding: 30px 150px 0px 0px;
 }
 
 .banner .container .right-banner img{
 height: auto;
-max-width: 300px;
+max-width: 250px;
 }
+
 
 
 
