@@ -176,38 +176,38 @@ header nav ul li:last-child {
 
 
 .banner .container {
-  padding-top: 80px;
-  background-color: #0A192F;
   display: flex;
   justify-content: space-between;
- 
+  padding-top: 80px;
+  padding-right: 150px;
+   padding-left: 150px;
+  background-color: #0A192F;
 }
 
 .banner .container .left-banner {
- padding-left: 150px;
  padding-top: 80px;
 }
 
 .banner .container .left-banner p:first-child{
+  margin-bottom: 10px;
+  margin-left: 3px;
+  font-family: 'Fira Code', monospace;
   font-size: 14px;
   font-weight: 400;
-  font-family: 'Fira Code', monospace;
-  margin-left: 3px;
-  margin-bottom: 10px;
 }
 
-.banner .container .left-banner h2 {
+.banner .container .left-banner h2 {   
+  margin-bottom: 10px;
+  font-family: 'Inter', sans-serif;
   font-size: 40px;
   font-weight: 700;
-  font-family: 'Inter', sans-serif;   
-  margin-bottom: 10px;
 }
 
-.banner .container .left-banner .designation {
-  font-size: 40px;
-  font-weight: 700;
-  font-family: 'Inter', sans-serif;  
+.banner .container .left-banner .designation {  
   color: #CCD6F6;
+  font-family: 'Inter', sans-serif;
+  font-size: 40px;
+  font-weight: 700;
 }
 
 .banner .container .left-banner .designation:first-child {
@@ -215,19 +215,103 @@ header nav ul li:last-child {
 }
 
 .banner .container .left-banner p small   {
+  font-family: "Fira Code", monospace;
   font-size: 20px;
   font-weight: 700;
-  font-family: "Fira Code", monospace;
 }
 
 .banner .container .right-banner {
-padding: 30px 150px 0px 0px;
+padding: 30px 0 0px 0px;
 }
 
 .banner .container .right-banner img{
 height: auto;
 max-width: 250px;
 }
+
+/*end banner*/
+
+/*start experience*/
+.exp .container {
+  padding: 80px 150px;
+  padding-top: 80px;
+  background-color: #0A192F;
+}
+
+.exp .exp-list .exp-item {
+  display: flex;
+  padding: 20px;
+  justify-content: space-around;
+   border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 32px rgba(0, 255, 255, 0.2), 
+              0 0 15px rgba(0, 255, 255, 0.3);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-radius: 10px;
+}
+
+.exp .exp-list .right-exp {
+  padding-left: 50px;
+}
+
+.exp .exp-list .exp-date span {
+  display: inline-block;
+  width: 20px;
+  height: 1px;
+  margin-bottom: 5px;
+  background-color: #ffffff;
+}
+
+.exp .exp-list .right-exp h3 {
+  margin-bottom: 10px;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.exp-skills {
+  display: flex;
+  flex-wrap: wrap;
+}
+.exp-skills li {
+  padding: 5px 10px;
+  background-color: rgba(100, 255, 218, 0.3);
+  color: #64FFDA;
+  font-family: 'Fira Code', monospace;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 20px;
+}
+
+
+.right-exp p {
+  line-height: 1.5;
+  margin-top: 10px;
+  color: #CCD6F6;
+  font-family: 'Fira Code', monospace;
+  font-size: 14px;
+  font-weight: 400;
+  text-align: justify;
+}
+
+.right-exp .company {
+  color: #ffffff;
+  font-size: 16px;
+}
+
+.exp-skills {
+  margin-top: 10px;
+}
+
+.exp-skills li+li {
+  margin-left: 10px;
+}
+
+.exp-date {
+  line-height: 1.5;
+}
+
+
+
 
 
 
