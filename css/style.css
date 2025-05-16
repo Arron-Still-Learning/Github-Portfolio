@@ -310,6 +310,18 @@ max-width: 250px;
   line-height: 1.5;
 }
 
+.exp-item+.exp-item {
+  margin-top: 30px;
+}
+
+.left-exp {
+  width: 5%;
+}
+
+.right-exp {
+  width: 90%;
+}
+
 
 
 
