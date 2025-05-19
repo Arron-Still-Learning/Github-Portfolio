@@ -17,6 +17,24 @@ body {
   font-weight: 400;
 }
 
+.heading {
+  font-size: 32px;
+  color: #64FFDA;
+  margin-bottom: 40px;
+  position: relative;
+  display: inline-block;
+}
+
+.heading::after {
+  content: '';
+  display: block;
+  width: 40%;
+  height: 2px;
+  background-color: #64FFDA;
+  margin-top: 8px;
+}
+
+
 /* === Inter Regular === */
 @font-face {
   font-family: 'Inter';
@@ -88,7 +106,7 @@ header .container {
   justify-content: space-between;
   align-items: center;
   height: 80px;
-  padding: 0px 50px;
+  padding: 0px 80px;
   background-color: #0A192F;
 }
 
@@ -178,9 +196,7 @@ header nav ul li:last-child {
 .banner .container {
   display: flex;
   justify-content: space-between;
-  padding-top: 80px;
-  padding-right: 150px;
-   padding-left: 150px;
+  padding: 150px;
   background-color: #0A192F;
 }
 
@@ -321,6 +337,63 @@ max-width: 250px;
 .right-exp {
   width: 90%;
 }
+
+/*end experience*/
+
+/*start education*/
+
+.edu .container {
+  padding: 80px 150px;
+  background-color: #0A192F;
+}
+
+.edu-item {
+  background-color: #112240;
+  border-left: 4px solid #64FFDA;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  padding: 24px;
+  margin-bottom: 32px;
+  transition: box-shadow 0.3s ease;
+  position: relative;
+}
+
+.edu-item:hover {
+  box-shadow: 0 10px 20px rgba(100, 255, 218, 0.15);
+}
+
+
+.edu-item img {
+  width: 80px;
+  height: 80px;
+  border-radius: 10px;
+  border: 2px solid #64FFDA;
+  padding: 10px;
+}
+
+.edu-content h3 {
+  margin: 0 0 8px 0;
+  font-size: 20px;
+  /*color: #64FFDA;*/
+}
+
+.edu-content p {
+  margin: 4px 0;
+  font-size: 16px;
+  color: #ccd6f6;
+}
+
+/*end education*/
+/*start projects*/
+
+/*.projects .container {
+  padding: 80px 150px;
+  background-color: #0A192F;
+}*/
+
+
 
 
 
