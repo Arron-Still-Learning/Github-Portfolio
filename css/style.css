@@ -18,20 +18,20 @@ body {
 }
 
 .heading {
-  font-size: 32px;
-  color: #64FFDA;
-  margin-bottom: 40px;
-  position: relative;
   display: inline-block;
+  position: relative;
+  margin-bottom: 40px;
+  color: #64FFDA;
+  font-size: 32px;
 }
 
 .heading::after {
-  content: '';
   display: block;
   width: 40%;
   height: 2px;
-  background-color: #64FFDA;
   margin-top: 8px;
+  background-color: #64FFDA;
+  content: '';
 }
 
 
@@ -70,6 +70,7 @@ body {
 .wrapper {
   margin: 0 auto;
   max-width: 1920px;
+  background-color: #0A192F;
 }
 
 .container {
@@ -196,7 +197,7 @@ header nav ul li:last-child {
 .banner .container {
   display: flex;
   justify-content: space-between;
-  padding: 150px;
+  padding: 150px 150px 150px 120px;
   background-color: #0A192F;
 }
 
@@ -256,8 +257,8 @@ max-width: 250px;
 
 .exp .exp-list .exp-item {
   display: flex;
-  padding: 20px;
   justify-content: space-around;
+  padding: 20px;
    border: 1px solid rgba(255, 255, 255, 0.1);
   box-shadow: 0 8px 32px rgba(0, 255, 255, 0.2), 
               0 0 15px rgba(0, 255, 255, 0.3);
@@ -348,16 +349,16 @@ max-width: 250px;
 }
 
 .edu-item {
+  display: flex;
+  position: relative;
+  align-items: center;
+  margin-bottom: 32px;
+  padding: 24px;
   background-color: #112240;
+  transition: box-shadow 0.3s ease;
   border-left: 4px solid #64FFDA;
   border-radius: 10px;
-  display: flex;
-  align-items: center;
   gap: 24px;
-  padding: 24px;
-  margin-bottom: 32px;
-  transition: box-shadow 0.3s ease;
-  position: relative;
 }
 
 .edu-item:hover {
@@ -368,9 +369,9 @@ max-width: 250px;
 .edu-item img {
   width: 80px;
   height: 80px;
-  border-radius: 10px;
-  border: 2px solid #64FFDA;
   padding: 10px;
+  border: 2px solid #64FFDA;
+  border-radius: 10px;
 }
 
 .edu-content h3 {
@@ -381,17 +382,168 @@ max-width: 250px;
 
 .edu-content p {
   margin: 4px 0;
-  font-size: 16px;
   color: #ccd6f6;
+  font-size: 16px;
 }
 
 /*end education*/
 /*start projects*/
-
 .projects .container {
-  padding: 80px 150px;
+  padding: 40px 150px;
   background-color: #0A192F;
+  color: #FFFFFF;
 }
+
+.projects .projects-list .project-item {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.project-image {
+  width: 20%;
+}
+
+.project-content {
+  padding-top: 10px;
+  width: 80%;
+  text-align: justify;
+  padding-left: 15px;
+}
+
+.project-item {
+    border: 1px transparent #808080;
+    padding: 20px;
+    border-radius: 10px;
+    opacity: 0.8;
+}
+
+.project-item:hover {
+  box-shadow: 0 10px 20px rgba(100, 255, 218, 0.15);
+  background-color: #112240;
+  opacity: 1;
+  cursor: pointer;
+}
+
+.project-item:hover .project-content h3 {
+  color: #64FFDA;
+}
+
+.project-item img {
+  width: 150px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.project-content h3 {
+  font-size: 20px;
+  font-family: 'Inter', sans-serif;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.project-content h3::after {
+  content: '';
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background-image: url('../img/link-arrow.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-left: 8px;
+  position: absolute;
+  top: 30%;
+  transform: translateY(-30%);  
+  transition: all 0.3s ease;
+}
+
+.project-content:hover h3:after {
+  background-image: url('../img/link-arrow-hover.png');
+  top: 50%;
+  transform: translateY(-50%);
+  margin-left: 15px;  
+}
+
+.project-content p {
+  color: #CCD6F6;
+  font-family: 'Fira Code', monospace;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.projects-list li+li {
+  margin-top: 20px;
+}
+
+/*end projects*/
+
+/*start contact*/
+
+.contact .container {
+  background-color: #112240;
+  padding: 60px 150px;
+  color: #FFFFFF;
+  border-top-left-radius: 50%; 
+  border-top-right-radius: 50%; 
+  text-align: center;
+}
+
+.social-item a img{
+  width: 36px;
+  height: auto;
+  opacity: 1;
+}
+
+.contact-banner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.social-list {
+  display: flex;
+  text-align: right;
+  width: 50%;
+  justify-content: end;
+  flex-direction: row;
+}
+
+.social-item+.social-item {
+  margin-left: 20px;
+}
+
+.social-item a img:hover{
+  width: 36px;
+  height: auto;
+  opacity: 0.8;
+}
+
+.contact-info {
+  text-align: justify;
+  margin-bottom: 40px;
+  width: 50%;
+}
+
+.contact-info p,.contact-info a{
+font-size: 20px;
+color: #CCD6F6;
+}
+
+.contact-info a:hover {
+  opacity: 0.8;
+}
+
+.contact-info p+p {
+  margin-top: 40px;
+}
+
+.contact-info p {
+  color: #64FFDA;
+}
+
+
+
+
+
 
 
 
