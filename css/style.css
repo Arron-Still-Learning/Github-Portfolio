@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .sp {
   display: none;
 }
@@ -70,7 +74,6 @@ body {
 .wrapper {
   margin: 0 auto;
   max-width: 1920px;
-  background-color: #0A192F;
 }
 
 .container {
@@ -108,7 +111,7 @@ header .container {
   align-items: center;
   height: 80px;
   padding: 0px 80px;
-  background-color: #0A192F;
+  background-color: rgba(10, 25, 47, 0.8);
 }
 
 .logo {
@@ -194,12 +197,11 @@ header nav ul li:last-child {
 
 /*start banner*/
 
-
 .banner .container {
   display: flex;
   justify-content: space-between;
   padding: 150px 150px 150px 120px;
-  background-color: #0A192F;
+  z-index: 2;
 }
 
 .banner .container .left-banner {
@@ -245,6 +247,7 @@ padding: 30px 0 0px 0px;
 .banner .container .right-banner img{
 height: auto;
 max-width: 250px;
+opacity: 0.9;
 }
 
 /*end banner*/
@@ -353,13 +356,16 @@ max-width: 250px;
   display: flex;
   position: relative;
   align-items: center;
-  margin-bottom: 32px;
   padding: 24px;
   background-color: #112240;
   transition: box-shadow 0.3s ease;
   border-left: 4px solid #64FFDA;
   border-radius: 10px;
   gap: 24px;
+}
+
+.edu-item+.edu-item {
+   margin-top: 32px;
 }
 
 .edu-item:hover {
@@ -481,6 +487,10 @@ max-width: 250px;
 /*start contact*/
 
 .contact .container {
+  background-color: #0A192F;
+}
+
+.contact-inner {
   background-color: #112240;
   padding: 60px 150px 30px 150px;
   color: #FFFFFF;
