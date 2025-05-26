@@ -111,13 +111,14 @@ header .container {
   background-color: #0A192F;
 }
 
-header .container .logo {
+.logo {
   display: flex;
   align-items: center;
   
 }
-header .container .logo img {
-  height: 48px;
+.logo img {
+  height: 64px;
+  width: auto;
 }
 
 header nav ul {
@@ -250,7 +251,7 @@ max-width: 250px;
 
 /*start experience*/
 .exp .container {
-  padding: 80px 150px;
+  padding: 40px 150px 0px 150px;
   padding-top: 80px;
   background-color: #0A192F;
 }
@@ -344,7 +345,7 @@ max-width: 250px;
 /*start education*/
 
 .edu .container {
-  padding: 80px 150px;
+  padding: 80px 150px 0 150px;
   background-color: #0A192F;
 }
 
@@ -389,7 +390,7 @@ max-width: 250px;
 /*end education*/
 /*start projects*/
 .projects .container {
-  padding: 40px 150px;
+  padding: 80px 150px 60px 150px;
   background-color: #0A192F;
   color: #FFFFFF;
 }
@@ -481,64 +482,80 @@ max-width: 250px;
 
 .contact .container {
   background-color: #112240;
-  padding: 60px 150px;
+  padding: 60px 150px 30px 150px;
   color: #FFFFFF;
   border-top-left-radius: 50%; 
   border-top-right-radius: 50%; 
   text-align: center;
 }
 
-.social-item a img{
-  width: 36px;
-  height: auto;
-  opacity: 1;
+.social-item {
+  border: 2px solid #CCD6F6;
+  border-radius: 50%;
 }
 
-.contact-banner {
+.social-item a {
   display: flex;
-  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  width: 36px;
+  height: 36px;
+}
+
+.social-item a img{
+  width: 24px;
+  height: auto;
+  justify-content: center;
+  opacity: 0.8;
 }
 
 .social-list {
   display: flex;
-  text-align: right;
-  width: 50%;
-  justify-content: end;
+  text-align: center;
+  justify-content: center;
   flex-direction: row;
 }
 
 .social-item+.social-item {
-  margin-left: 20px;
+  margin-left: 30px;
 }
 
-.social-item a img:hover{
-  width: 36px;
-  height: auto;
-  opacity: 0.8;
+
+.social-item:hover  {
+  border-color: #64FFDA;
 }
 
-.contact-info {
-  text-align: justify;
-  margin-bottom: 40px;
-  width: 50%;
+.social-item:hover a img {
+  opacity: 1;
 }
 
-.contact-info p,.contact-info a{
-font-size: 20px;
-color: #CCD6F6;
+.contact .logo {
+  display: block;
+  justify-content: center;
+  margin-bottom: 50px;
 }
 
-.contact-info a:hover {
-  opacity: 0.8;
+/*contact end*/
+
+footer {
+  padding: 20px 0;
+  text-align: center;
+  background-color: #112240;
 }
 
-.contact-info p+p {
-  margin-top: 40px;
+footer p {
+  color: #CCD6F6;
+  font-family: 'Fira Code', monospace;
+  font-size: 16px;
+  font-weight: 400;
 }
 
-.contact-info p {
-  color: #64FFDA;
+footer p:last-child {
+  margin-top: 10px;
 }
+
 
 
 
