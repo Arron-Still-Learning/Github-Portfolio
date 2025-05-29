@@ -1,6 +1,6 @@
 $(document).ready(function () {
     const sections = $("section[id]");
-    const navLinks = $(".nav-link");
+    const navLinks = $(".nav-link a");
 
     $(window).on("scroll", function () {
       let currentSection = "";
@@ -13,11 +13,19 @@ $(document).ready(function () {
         }
       });
 
-      navLinks.removeClass("active");
+      // Remove active class from all nav-link li elements
+      $(".nav-link").removeClass("active");
+      
+      // Add active class to the matching nav-link li element
       navLinks.each(function () {
         if ($(this).attr("href") === "#" + currentSection) {
-          $(this).addClass("active");
+          $(this).parent().addClass("active");
         }
       });
+
+      // Handle home section (when no specific section is active)
+      if (!currentSection) {
+        $(".nav-link").first().addClass("active");
+      }
     });
-  });
+});
