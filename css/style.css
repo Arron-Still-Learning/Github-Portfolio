@@ -154,6 +154,11 @@ header nav ul li.active {
   color: #64FFDA;
 }
 
+.nav-link.active {
+   border-bottom: 2px solid #64FFDA;
+}
+
+
 header nav ul li:last-child {
   border-bottom: 2px solid transparent;
 }
@@ -199,13 +204,16 @@ header nav ul li:last-child {
 
 .banner .container {
   display: flex;
-  justify-content: space-between;
-  padding: 150px 150px 150px 120px;
+  padding: 150px 150px 150px 150px;
   z-index: 2;
+  position: relative;
+  justify-content: space-between;
+  gap: 0;
 }
 
 .banner .container .left-banner {
  padding-top: 80px;
+ width: 50%;
 }
 
 .banner .container .left-banner p:first-child{
@@ -241,7 +249,9 @@ header nav ul li:last-child {
 }
 
 .banner .container .right-banner {
-padding: 30px 0 0px 0px;
+padding-top: 30px;
+width: 50%;
+text-align: right;
 }
 
 .banner .container .right-banner img{
