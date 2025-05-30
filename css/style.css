@@ -117,11 +117,17 @@ header .container {
 .logo {
   display: flex;
   align-items: center;
-  
+  transition: transform 0.3s ease;
 }
+
+.logo:hover {
+  transform: scale(1.05);
+}
+
 .logo img {
   height: 64px;
   width: auto;
+  filter: drop-shadow(0 0 10px rgba(100, 255, 218, 0.3));
 }
 
 header nav ul {
@@ -406,7 +412,7 @@ opacity: 0.9;
 /*end education*/
 /*start projects*/
 .projects .container {
-  padding: 80px 150px 60px 150px;
+  padding: 80px 150px 0px 150px;
   background-color: #0A192F;
   color: #FFFFFF;
 }
@@ -498,6 +504,7 @@ opacity: 0.9;
 .contact .container {
   background: linear-gradient(135deg, #0A192F 0%, #112240 100%);
   position: relative;
+  padding-top: 80px;
 }
 
 .contact-inner {
@@ -532,15 +539,6 @@ opacity: 0.9;
   display: block;
   justify-content: center;
   margin-bottom: 40px;
-  transition: transform 0.3s ease;
-}
-
-.contact .logo:hover {
-  transform: scale(1.05);
-}
-
-.contact .logo img {
-  filter: drop-shadow(0 0 10px rgba(100, 255, 218, 0.3));
 }
 
 .contact-text {
@@ -644,7 +642,7 @@ opacity: 0.9;
 }
 
 /* Footer - Stylish & Clean */
-footer {
+footer .container{
   padding: 40px 0;
   background: linear-gradient(135deg, #112240 0%, #0A192F 100%);
   border-top: 1px solid rgba(100, 255, 218, 0.1);
