@@ -210,7 +210,7 @@ header nav ul li:last-child {
 
 .banner .container {
   display: flex;
-  padding: 150px 150px 150px 150px;
+  padding: 180px 150px 150px 150px;
   z-index: 2;
   position: relative;
   justify-content: space-between;
